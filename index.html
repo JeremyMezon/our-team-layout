@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Meet the Team Section | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Outfit", sans-serif;
+      }
+
+      .mar-x-auto{
+        margin: 0 auto;
+      }
+
+      .member-section{
+        background-image: url("resources/Background_decor@2x.png");
+        background-position-x: left;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: #F3F4F6;
+        border-radius: 25px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .see-members-box{
+        display: flex;
+        align-items: flex-end;
+        height: 300px;
+        img{
+          display: inline-block;
+        }
+        div{
+          padding: 0 24px 24px 24px;
+        }
+      }
+
+      .member-box{
+        position: relative;
+        /* background-image: url("resources/Gradient@2x.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 100%; */
+        display: flex;
+        align-items: flex-end;
+        height: 300px;
+        img {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+        }
+        div {
+          padding: 0 24px 18px 24px;
+          z-index: 2;
+          color: white;
+          h3{
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+          h4{
+            font-weight: 400;
+            font-size: .8rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: 769px) {
+        .member-box{
+          height: 400px;
+        }
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+
+    Our team
+    
+    Meet the brain
+    
+    We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.
+    
+    Liam Novak
+    
+    Software Engineer
+    
+    Sophia Moretti
+    
+    Business Development Manager
+    
+    See all members
+    
+    Ethan Rossi
+    
+    Business Development Manager
+    
+    Isabella Ricci
+    
+    UX Designer
+    
+    Noah Conti
+    
+    Content Creator
+
+     -->
+
+    <section class="flex justify-center items-center min-h-screen py-12 sm:px-12 w-full">
+      <div class="grid xl:grid-cols-4 md:grid-cols-3 member-section container">
+        <div class="xl:col-span-2 md:col-span-3 order-first">
+          <div class="p-8 w-full sm:w-[550px]">
+            <h1 class="text-[#263FA9]">Our team</h1>
+            <h2 class="font-medium text-4xl my-3">Meet the brain</h2>
+            <p class="text-[#394150]">
+              We are proud to have them as part of our community and look forward to continuing 
+              to push the boundaries of what's possible in the world of digital art.
+            </p>
+          </div>
+        </div>
+        <div class="member-box bg-[#C1B6F8] order-1">
+          <img src="/resources/person_1.png" />
+          <img src="/resources/Gradient@2x.png">
+          <div class="member">
+            <h3>Liam Novak</h3>
+            <h4>Software Engineer</h4>
+          </div>
+        </div>
+        <div class="member-box bg-[#EDACD2] order-2">
+          <img src="/resources/person_2.png" />
+          <img src="/resources/Gradient@2x.png">
+          <div class="member">
+            <h3>Sophia Moretti</h3>
+            <h4>Business Development Manager</h4>
+          </div>
+        </div>
+        <div class="see-members-box order-last md:order-4 xl:order-3">
+          <div>
+            <a href="/" class="font-medium">
+              See all members 
+              <span>
+                <img src="/resources/arrow up right.svg" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="member-box bg-[#9DC4F8] order-3 xl:order-4 md:order-3">
+          <img src="/resources/person_3.png" />
+          <img src="/resources/Gradient@2x.png">
+          <div class="member">
+            <h3>Ethan Rossi</h3>
+            <h4>Business Development Manager</h4>
+          </div>
+        </div>
+        <div class="member-box bg-[#F8D8B0] order-4">
+          <img src="/resources/person_4.png" />
+          <img src="/resources/Gradient@2x.png">
+          <div class="member">
+            <h3>Isabella Ricci</h3>
+            <h4>UX Designer</h4>
+          </div>
+        </div>
+        <div class="member-box bg-[#86E7D4] order-5">
+          <img src="/resources/person_5.png" />
+          <img src="/resources/Gradient@2x.png">
+          <div class="member">
+            <h3>Noah Conti</h3>
+            <h4>Content Creator</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
